@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+/*======================== dibut hedaer========================= */
+
+.hedear {
+  width: 100%;
+  height: 100vh;
+  background-image: url(img/background1.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  position: relative;
+  overflow: hidden;
+}
+.hedear .navbar {
+  background-color: rgba(28, 49, 68, 1);
+  width: 100%;
+  height: 10vh;
+
+  display: flex;
+  align-items: center;
+  z-index: 99;
+  position: fixed;
+}
+.logo {
+  width: 100px;
+  cursor: pointer;
+  z-index: 99;
+}
+.cart {
+  width: 40px;
+  cursor: pointer;
+}
+nav {
+  flex: 1;
+  padding-left: 50%;
+  z-index: 99;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 0 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+nav ul li a:hover {
+  border-bottom: solid;
+  background-color: rgba(28, 49, 68, 1);
+  border-radius: 10px;
+}
+.paragrath {
+  width: 100%;
+  height: 50vh;
+  margin-top: 50px;
+}
+.paragrath h1 {
+  color: rgb(247, 243, 243);
+  font-size: 50px;
+  padding: 50px 50px;
+}
+.paragrath a {
+  text-decoration: none;
+  color: rgb(17, 16, 16);
+  border: 2px solid;
+  background-color: rgb(224, 222, 228);
+  padding: 5px 15px;
+  margin-left: 110px;
+}
+.paragrath a:hover {
+  color: rgb(28, 250, 80);
+  background-color: rgba(28, 49, 68, 1);
+}
+/* =============================fin hedear================================= */
+
+.section {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.section .about {
+  box-sizing: border-box;
+  position: absolute;
+  margin-left: 10%;
+  margin-top: 15vh;
+  width: 80%;
+  height: 70vh;
+  background-color: rgba(28, 49, 68, 1);
+}
+.section .about .left {
+  float: left;
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.section .about .left .image {
+  width: 80%;
+  height: 80%;
+  margin: 10%;
+  box-sizing: border-box;
+}
+.section .about .left .image img {
+  width: 100%;
+  align-items: center;
+}
+.section .about .rigth {
+  float: right;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(28, 49, 68, 1);
+}
+.section .about .rigth h2 {
+  width: fit-content;
+  color: white;
+  margin-top: 10%;
+  margin-left: 30%;
+  border-bottom: 3px solid;
+}
+.section .about .rigth p {
+  padding: 20px 10px;
+  color: white;
+  font-size: 25px;
+}
+
+/* ==========================================fin about======================================= */
+
+.cars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+.container {
+  display: flex;
+  width: 90vw;
+}
+
+.panel {
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: flex 1s ease-in;
+}
+
+.panel h3 {
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel h3 a {
+  text-decoration: none;
+  border: solid;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+
+.panel h3 a:hover {
+  color: yellow;
+}
+
+.panel.active {
+  flex: 5;
+}
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+@media (max-width: 40px) {
+  .container {
+    width: 100vw;
+  }
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
+}
+
+/* ====================================fin cars===================================== */
+
+.footer {
+  display: flex;
+  width: 100%;
+  height: 30vh;
+  background-color: rgb(17, 16, 16);
+  box-sizing: border-box;
+}
+.footer .footer1 {
+  width: 33%;
+  height: 30vh;
+  padding: 50px 40px;
+}
+.footer .footer2 {
+  width: 33%;
+  height: 30vh;
+}
+.footer .footer2 ul li {
+  list-style: none;
+  margin-top: 30px;
+}
+.footer .footer2 ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+.footer .footer2 span {
+  color: white;
+  margin-left: 20px;
+}
+.footer .footer3 {
+  width: 33%;
+  height: 30vh;
+}
+.footer p {
+  color: rgb(255, 254, 254);
+  text-align: center;
+  margin-top: 30px;
+  font-size: 24px;
+}
+.footer .footer3 .foot {
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer .footer3 .foot .icon ul li {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+}
+
+.footer .footer3 .foot .icon ul li a {
+  text-decoration: none;
+  font-size: 35px;
+  color: white;
+}

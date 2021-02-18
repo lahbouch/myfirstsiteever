@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hedear{
+    width: 100%;
+    height: 10vh;
+    position: relative;
+    overflow: hidden;
+}
+.hedear .navbar{
+background-color: 
+rgba(28, 49, 68, 1);
+width: 100%;
+height: 10vh;
+
+display: flex;
+align-items: center;
+z-index: 99;
+position: fixed;
+}
+.logo{
+width: 100px;
+cursor: pointer;
+}
+.cart{
+width: 40px;
+cursor: pointer;
+}
+nav{
+flex: 1;
+padding-left: 50%;
+}
+nav ul li{
+display: inline-block;
+list-style: none;
+padding: 0 20px;
+}
+nav ul li a{
+text-decoration: none;
+color: white;
+}
+nav ul li a:hover{
+border-bottom: solid;
+background-color: rgba(28, 49, 68, 1);
+border-radius: 10px;
+}
+
+/* ==========================fin bar nav==================== */
+
+.cars{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+.container{
+    display: flex;
+    width: 90vw;
+}
+
+.panel{
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 1s ease-in;
+}
+
+.panel h3{
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel h3 a{
+    text-decoration: none;
+    border: solid;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.panel h3 a:hover{
+    color: yellow;
+}
+
+.panel.active{
+    flex: 5;
+}
+.panel.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+@media(max-width: 40px){
+    .container{
+        width: 100vw;
+    }
+    .panel:nth-of-type(4),.panel:nth-of-type(5){
+        display: none;
+    }
+}
+
+/* ======================fin cars================ */
+
+
+#aider{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+
+}
+.aider1{
+    background-color: rgba(28, 49, 68, 1);
+    width: 28%;
+}
+#aider h1{
+    padding: 5px;
+    text-align: center;
+    color: white;
+}
+#aider p{
+    padding: 50px;
+    color: white;
+}
+
+@media only screen and (max-width:600px){
+    .aider1{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/* =======================fin aider================ */
+
+#section{
+    padding: 4%;
+    width: 100%;
+    height: 80vh;
+    background-color: rgba(28, 49, 68, 1);
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.sec{
+    width: 28%;
+    height: auto;
+    background-color: rgba(28, 49, 68, 1);
+}
+#section.sec img{
+    width: 40px;
+}
+
+/* fin */
+
+.footer{
+    display: flex;
+    width: 100%;
+    height: 30vh;
+    background-color: rgb(17, 16, 16);
+    box-sizing: border-box;
+}
+.footer .footer1{
+    width: 33%;
+    height: 30vh;
+    padding: 50px 40px;
+}
+.footer .footer2{
+    width: 33%;
+    height: 30vh;
+}
+.footer .footer2 ul li{
+    list-style: none;
+    margin-top: 30px;
+}
+.footer .footer2 ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+.footer .footer2 span{
+    color: white;
+    margin-left: 20px;
+}
+.footer .footer3{
+    width: 33%;
+    height: 30vh;
+}
+.footer p{
+    color: rgb(255, 254, 254);
+    text-align: center;
+    margin-top: 30px;
+    font-size: 24px;
+}
+.footer .footer3 .foot{
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+
+.footer .footer3 .foot .icon ul li{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+}
+
+.footer .footer3 .foot .icon ul li a{
+    text-decoration: none;
+    font-size: 35px;
+    color: white;
+}
+
